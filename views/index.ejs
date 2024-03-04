@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecommerce</title>
+  <link rel="stylesheet" href="/bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg shadow">
+    <div class="container-fluid">
+      <div><a class="navbar-brand text-white" href="#">Navbar</a></div>
+      <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link fw-semibold text-white" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold text-white" href="/produk_home">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold text-white" href="/keranjang">Cart</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold text-white" href="/profile">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold text-white" href="/history">History</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <% if (user) { %>
+          <p class="fw-semibold text-uppercase pt-2">
+            <%= user.username %> <span class="ms-2"><button type="button" class="btn btn-light"><a href="/logout"
+              class=" text-black">Logout</a></button></span>
+          </p>
+
+          <% } else { %>
+            <button type="button" class="btn btn-light"><a href="/login" class=" text-black">Login</a></button>
+            <button type="button" class="btn btn-light"><a href="/signup" class=" text-black">Register</a></button>
+            <% } %>
+      </div>
+    </div>
+  </nav>
+  <div class="jumbotron d-flex justify-content-center align-items-center" style="background-image: url(/img/home.jpg);background-repeat: no-repeat; background-position: center;
+  background-repeat: no-repeat;background-size: cover;">
+    
+    </div>
+  <footer class="p-2 d-flex justify-content-center align-items-center fixed-bottom">
+    <p class="">© EcomerceGrocery 2024</p>
+  </footer>
+  <script src="/bootstrap/bootstrap.js"></script>
+</body>
+
+</html>

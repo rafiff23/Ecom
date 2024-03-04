@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  background-color: #D04848;
+  color: white;
+}
+
+.jumbotron {
+  height: 100vh;
+  width: 100%;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 500px;
+}
+
+.kotak-card{
+    width: 1253px;
+    padding-top: 20px;
+}
+
+.desc-detail{
+  width: 40%;
+}
+
+.tombol-keranjang{
+  background-color: #a5dd9b;
+  width: 100%;
+}
+.tombol-keranjang:hover{
+  background-color: #a5dd9b;
+}
+
+.pesan-sukses-cart{
+  margin-top: 20px;
+}
+.desc-cart{
+  font-size: 20px;
+  color: green;
+  margin-top: 10px;
+}
+
+.quantity{
+  width: 300px;
+}
+
+footer {
+  background-color: #D04848
+}
+
+
